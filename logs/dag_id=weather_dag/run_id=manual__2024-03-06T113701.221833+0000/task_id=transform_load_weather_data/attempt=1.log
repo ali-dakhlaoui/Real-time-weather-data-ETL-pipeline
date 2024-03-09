@@ -1,0 +1,19 @@
+[2024-03-06T11:37:09.043+0000] {taskinstance.py:1956} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: weather_dag.transform_load_weather_data manual__2024-03-06T11:37:01.221833+00:00 [queued]>
+[2024-03-06T11:37:09.054+0000] {taskinstance.py:1956} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: weather_dag.transform_load_weather_data manual__2024-03-06T11:37:01.221833+00:00 [queued]>
+[2024-03-06T11:37:09.061+0000] {taskinstance.py:2170} INFO - Starting attempt 1 of 3
+[2024-03-06T11:37:09.097+0000] {taskinstance.py:2191} INFO - Executing <Task(PythonOperator): transform_load_weather_data> on 2024-03-06 11:37:01.221833+00:00
+[2024-03-06T11:37:09.107+0000] {standard_task_runner.py:60} INFO - Started process 610 to run task
+[2024-03-06T11:37:09.110+0000] {standard_task_runner.py:87} INFO - Running: ['***', 'tasks', 'run', 'weather_dag', 'transform_load_weather_data', 'manual__2024-03-06T11:37:01.221833+00:00', '--job-id', '106', '--raw', '--subdir', 'DAGS_FOLDER/weather_dag.py', '--cfg-path', '/tmp/tmpa4wmyskp']
+[2024-03-06T11:37:09.112+0000] {standard_task_runner.py:88} INFO - Job 106: Subtask transform_load_weather_data
+[2024-03-06T11:37:09.168+0000] {task_command.py:423} INFO - Running <TaskInstance: weather_dag.transform_load_weather_data manual__2024-03-06T11:37:01.221833+00:00 [running]> on host 34f721dca7a1
+[2024-03-06T11:37:09.256+0000] {taskinstance.py:2480} INFO - Exporting env vars: AIRFLOW_CTX_DAG_EMAIL='myemail@domain.com' AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='weather_dag' AIRFLOW_CTX_TASK_ID='transform_load_weather_data' AIRFLOW_CTX_EXECUTION_DATE='2024-03-06T11:37:01.221833+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2024-03-06T11:37:01.221833+00:00'
+[2024-03-06T11:37:09.268+0000] {logging_mixin.py:188} INFO - {'coord': {'lon': 13.449, 'lat': 48.5712}, 'weather': [{'id': 803, 'main': 'Clouds', 'description': 'broken clouds', 'icon': '04d'}], 'base': 'stations', 'main': {'temp': 283.75, 'feels_like': 282.8, 'temp_min': 282.02, 'temp_max': 284.62, 'pressure': 1019, 'humidity': 74}, 'visibility': 10000, 'wind': {'speed': 0.89, 'deg': 326, 'gust': 2.68}, 'clouds': {'all': 66}, 'dt': 1709724853, 'sys': {'type': 2, 'id': 2077103, 'country': 'DE', 'sunrise': 1709703455, 'sunset': 1709744251}, 'timezone': 3600, 'id': 2855328, 'name': 'Passau', 'cod': 200}
+[2024-03-06T11:37:09.349+0000] {logging_mixin.py:188} INFO -      City    Description  ...  Sunrise (Local Time)  Sunset (Local Time)
+0  Passau  broken clouds  ...   2024-03-06 06:37:35  2024-03-06 17:57:31
+
+[1 rows x 12 columns]
+[2024-03-06T11:37:09.350+0000] {logging_mixin.py:188} INFO - hello
+[2024-03-06T11:37:09.357+0000] {python.py:201} INFO - Done. Returned value was: None
+[2024-03-06T11:37:09.366+0000] {taskinstance.py:1138} INFO - Marking task as SUCCESS. dag_id=weather_dag, task_id=transform_load_weather_data, execution_date=20240306T113701, start_date=20240306T113709, end_date=20240306T113709
+[2024-03-06T11:37:09.403+0000] {local_task_job_runner.py:234} INFO - Task exited with return code 0
+[2024-03-06T11:37:09.419+0000] {taskinstance.py:3280} INFO - 0 downstream tasks scheduled from follow-on schedule check

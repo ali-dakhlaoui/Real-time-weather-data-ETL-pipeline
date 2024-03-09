@@ -1,0 +1,1 @@
+[2024-03-06T12:43:33.443+0000] {scheduler_job_runner.py:781} ERROR - Executor reports task instance <TaskInstance: weather_dag.is_weather_api_ready manual__2024-03-06T12:30:33.551950+00:00 [queued]> finished (failed) although the task says it's queued. (Info: None) Was the task killed externally?

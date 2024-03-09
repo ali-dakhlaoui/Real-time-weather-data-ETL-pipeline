@@ -1,0 +1,350 @@
+[2024-03-03T19:27:00.178+0000] {processor.py:161} INFO - Started process (PID=41) to work on /opt/airflow/dags/weather_TL.py
+[2024-03-03T19:27:00.179+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/weather_TL.py for tasks to queue
+[2024-03-03T19:27:00.183+0000] {logging_mixin.py:188} INFO - [2024-03-03T19:27:00.183+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/weather_TL.py
+[2024-03-03T19:27:32.408+0000] {logging_mixin.py:188} INFO - [2024-03-03T19:27:32.408+0000] {timeout.py:68} ERROR - Process timed out, PID: 41
+[2024-03-03T19:27:33.591+0000] {logging_mixin.py:188} INFO - [2024-03-03T19:27:32.409+0000] {dagbag.py:348} ERROR - Failed to import: /opt/airflow/dags/weather_TL.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 344, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/weather_TL.py", line 7, in <module>
+    import pandas as pd #working with data sets: include functions for analyzing, cleaning, exploring, and manipulating data
+  File "/home/airflow/.local/lib/python3.8/site-packages/pandas/__init__.py", line 48, in <module>
+    from pandas.core.api import (
+  File "<frozen importlib._bootstrap>", line 991, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 975, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 671, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 839, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 988, in get_code
+  File "<frozen importlib._bootstrap_external>", line 1078, in _cache_bytecode
+  File "<frozen importlib._bootstrap_external>", line 1103, in set_data
+  File "<frozen importlib._bootstrap_external>", line 192, in _write_atomic
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/utils/timeout.py", line 69, in handle_timeout
+    raise AirflowTaskTimeout(self.error_message)
+airflow.exceptions.AirflowTaskTimeout: DagBag import timeout for /opt/airflow/dags/weather_TL.py after 30.0s.
+Please take a look at these docs to improve your DAG import time:
+* https://airflow.apache.org/docs/apache-airflow/2.8.1/best-practices.html#top-level-python-code
+* https://airflow.apache.org/docs/apache-airflow/2.8.1/best-practices.html#reducing-dag-complexity, PID: 41
+[2024-03-03T19:27:33.878+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/weather_TL.py
+[2024-03-03T19:27:56.255+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/weather_TL.py took 56.414 seconds
+[2024-03-03T19:41:48.734+0000] {processor.py:161} INFO - Started process (PID=35) to work on /opt/airflow/dags/weather_TL.py
+[2024-03-03T19:41:48.841+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/weather_TL.py for tasks to queue
+[2024-03-03T19:41:48.843+0000] {logging_mixin.py:188} INFO - [2024-03-03T19:41:48.843+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/weather_TL.py
+[2024-03-03T19:41:50.481+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/weather_TL.py
+[2024-03-03T19:41:50.566+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/weather_TL.py took 1.835 seconds
+[2024-03-03T19:42:21.437+0000] {processor.py:161} INFO - Started process (PID=95) to work on /opt/airflow/dags/weather_TL.py
+[2024-03-03T19:42:21.443+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/weather_TL.py for tasks to queue
+[2024-03-03T19:42:21.445+0000] {logging_mixin.py:188} INFO - [2024-03-03T19:42:21.445+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/weather_TL.py
+[2024-03-03T19:42:21.884+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/weather_TL.py
+[2024-03-03T19:42:21.895+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/weather_TL.py took 0.462 seconds
+[2024-03-03T19:42:52.006+0000] {processor.py:161} INFO - Started process (PID=154) to work on /opt/airflow/dags/weather_TL.py
+[2024-03-03T19:42:52.044+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/weather_TL.py for tasks to queue
+[2024-03-03T19:42:52.047+0000] {logging_mixin.py:188} INFO - [2024-03-03T19:42:52.047+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/weather_TL.py
+[2024-03-03T19:42:52.518+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/weather_TL.py
+[2024-03-03T19:42:52.528+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/weather_TL.py took 0.527 seconds
+[2024-03-03T19:43:22.840+0000] {processor.py:161} INFO - Started process (PID=214) to work on /opt/airflow/dags/weather_TL.py
+[2024-03-03T19:43:22.841+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/weather_TL.py for tasks to queue
+[2024-03-03T19:43:22.843+0000] {logging_mixin.py:188} INFO - [2024-03-03T19:43:22.843+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/weather_TL.py
+[2024-03-03T19:43:23.241+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/weather_TL.py
+[2024-03-03T19:43:23.252+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/weather_TL.py took 0.415 seconds
+[2024-03-03T19:43:53.494+0000] {processor.py:161} INFO - Started process (PID=274) to work on /opt/airflow/dags/weather_TL.py
+[2024-03-03T19:43:53.495+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/weather_TL.py for tasks to queue
+[2024-03-03T19:43:53.497+0000] {logging_mixin.py:188} INFO - [2024-03-03T19:43:53.497+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/weather_TL.py
+[2024-03-03T19:43:53.857+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/weather_TL.py
+[2024-03-03T19:43:53.868+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/weather_TL.py took 0.377 seconds
+[2024-03-03T19:44:24.069+0000] {processor.py:161} INFO - Started process (PID=334) to work on /opt/airflow/dags/weather_TL.py
+[2024-03-03T19:44:24.071+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/weather_TL.py for tasks to queue
+[2024-03-03T19:44:24.073+0000] {logging_mixin.py:188} INFO - [2024-03-03T19:44:24.073+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/weather_TL.py
+[2024-03-03T19:44:24.440+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/weather_TL.py
+[2024-03-03T19:44:24.450+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/weather_TL.py took 0.385 seconds
+[2024-03-03T19:44:54.582+0000] {processor.py:161} INFO - Started process (PID=394) to work on /opt/airflow/dags/weather_TL.py
+[2024-03-03T19:44:54.584+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/weather_TL.py for tasks to queue
+[2024-03-03T19:44:54.587+0000] {logging_mixin.py:188} INFO - [2024-03-03T19:44:54.586+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/weather_TL.py
+[2024-03-03T19:44:54.968+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/weather_TL.py
+[2024-03-03T19:44:54.977+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/weather_TL.py took 0.399 seconds
+[2024-03-03T19:45:25.030+0000] {processor.py:161} INFO - Started process (PID=454) to work on /opt/airflow/dags/weather_TL.py
+[2024-03-03T19:45:25.032+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/weather_TL.py for tasks to queue
+[2024-03-03T19:45:25.034+0000] {logging_mixin.py:188} INFO - [2024-03-03T19:45:25.034+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/weather_TL.py
+[2024-03-03T19:45:25.390+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/weather_TL.py
+[2024-03-03T19:45:25.400+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/weather_TL.py took 0.373 seconds
+[2024-03-03T19:45:56.324+0000] {processor.py:161} INFO - Started process (PID=516) to work on /opt/airflow/dags/weather_TL.py
+[2024-03-03T19:45:56.325+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/weather_TL.py for tasks to queue
+[2024-03-03T19:45:56.327+0000] {logging_mixin.py:188} INFO - [2024-03-03T19:45:56.327+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/weather_TL.py
+[2024-03-03T19:45:56.691+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/weather_TL.py
+[2024-03-03T19:45:56.702+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/weather_TL.py took 0.380 seconds
+[2024-03-03T19:46:26.826+0000] {processor.py:161} INFO - Started process (PID=578) to work on /opt/airflow/dags/weather_TL.py
+[2024-03-03T19:46:26.828+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/weather_TL.py for tasks to queue
+[2024-03-03T19:46:26.830+0000] {logging_mixin.py:188} INFO - [2024-03-03T19:46:26.829+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/weather_TL.py
+[2024-03-03T19:46:27.195+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/weather_TL.py
+[2024-03-03T19:46:27.206+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/weather_TL.py took 0.383 seconds
+[2024-03-03T19:46:57.687+0000] {processor.py:161} INFO - Started process (PID=636) to work on /opt/airflow/dags/weather_TL.py
+[2024-03-03T19:46:57.688+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/weather_TL.py for tasks to queue
+[2024-03-03T19:46:57.690+0000] {logging_mixin.py:188} INFO - [2024-03-03T19:46:57.690+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/weather_TL.py
+[2024-03-03T19:46:58.064+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/weather_TL.py
+[2024-03-03T19:46:58.076+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/weather_TL.py took 0.392 seconds
+[2024-03-03T19:47:28.182+0000] {processor.py:161} INFO - Started process (PID=698) to work on /opt/airflow/dags/weather_TL.py
+[2024-03-03T19:47:28.183+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/weather_TL.py for tasks to queue
+[2024-03-03T19:47:28.185+0000] {logging_mixin.py:188} INFO - [2024-03-03T19:47:28.184+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/weather_TL.py
+[2024-03-03T19:47:28.533+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/weather_TL.py
+[2024-03-03T19:47:28.544+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/weather_TL.py took 0.366 seconds
+[2024-03-03T19:47:58.593+0000] {processor.py:161} INFO - Started process (PID=758) to work on /opt/airflow/dags/weather_TL.py
+[2024-03-03T19:47:58.594+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/weather_TL.py for tasks to queue
+[2024-03-03T19:47:58.596+0000] {logging_mixin.py:188} INFO - [2024-03-03T19:47:58.595+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/weather_TL.py
+[2024-03-03T19:47:58.942+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/weather_TL.py
+[2024-03-03T19:47:58.953+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/weather_TL.py took 0.363 seconds
+[2024-03-03T19:48:29.019+0000] {processor.py:161} INFO - Started process (PID=818) to work on /opt/airflow/dags/weather_TL.py
+[2024-03-03T19:48:29.020+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/weather_TL.py for tasks to queue
+[2024-03-03T19:48:29.022+0000] {logging_mixin.py:188} INFO - [2024-03-03T19:48:29.022+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/weather_TL.py
+[2024-03-03T19:48:29.359+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/weather_TL.py
+[2024-03-03T19:48:29.370+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/weather_TL.py took 0.354 seconds
+[2024-03-03T19:49:00.380+0000] {processor.py:161} INFO - Started process (PID=878) to work on /opt/airflow/dags/weather_TL.py
+[2024-03-03T19:49:00.382+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/weather_TL.py for tasks to queue
+[2024-03-03T19:49:00.384+0000] {logging_mixin.py:188} INFO - [2024-03-03T19:49:00.384+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/weather_TL.py
+[2024-03-03T19:49:00.758+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/weather_TL.py
+[2024-03-03T19:49:00.768+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/weather_TL.py took 0.392 seconds
+[2024-03-03T19:49:31.747+0000] {processor.py:161} INFO - Started process (PID=940) to work on /opt/airflow/dags/weather_TL.py
+[2024-03-03T19:49:31.748+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/weather_TL.py for tasks to queue
+[2024-03-03T19:49:31.750+0000] {logging_mixin.py:188} INFO - [2024-03-03T19:49:31.750+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/weather_TL.py
+[2024-03-03T19:49:32.113+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/weather_TL.py
+[2024-03-03T19:49:32.125+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/weather_TL.py took 0.383 seconds
+[2024-03-03T19:50:02.926+0000] {processor.py:161} INFO - Started process (PID=1000) to work on /opt/airflow/dags/weather_TL.py
+[2024-03-03T19:50:02.928+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/weather_TL.py for tasks to queue
+[2024-03-03T19:50:02.932+0000] {logging_mixin.py:188} INFO - [2024-03-03T19:50:02.931+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/weather_TL.py
+[2024-03-03T19:50:03.315+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/weather_TL.py
+[2024-03-03T19:50:03.326+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/weather_TL.py took 0.405 seconds
+[2024-03-03T19:50:33.645+0000] {processor.py:161} INFO - Started process (PID=1061) to work on /opt/airflow/dags/weather_TL.py
+[2024-03-03T19:50:33.646+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/weather_TL.py for tasks to queue
+[2024-03-03T19:50:33.648+0000] {logging_mixin.py:188} INFO - [2024-03-03T19:50:33.648+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/weather_TL.py
+[2024-03-03T19:50:34.036+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/weather_TL.py
+[2024-03-03T19:50:34.047+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/weather_TL.py took 0.405 seconds
+[2024-03-03T19:51:04.359+0000] {processor.py:161} INFO - Started process (PID=1124) to work on /opt/airflow/dags/weather_TL.py
+[2024-03-03T19:51:04.361+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/weather_TL.py for tasks to queue
+[2024-03-03T19:51:04.363+0000] {logging_mixin.py:188} INFO - [2024-03-03T19:51:04.363+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/weather_TL.py
+[2024-03-03T19:51:04.745+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/weather_TL.py
+[2024-03-03T19:51:04.756+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/weather_TL.py took 0.400 seconds
+[2024-03-03T19:51:34.796+0000] {processor.py:161} INFO - Started process (PID=1187) to work on /opt/airflow/dags/weather_TL.py
+[2024-03-03T19:51:34.797+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/weather_TL.py for tasks to queue
+[2024-03-03T19:51:34.799+0000] {logging_mixin.py:188} INFO - [2024-03-03T19:51:34.799+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/weather_TL.py
+[2024-03-03T19:51:35.144+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/weather_TL.py
+[2024-03-03T19:51:35.161+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/weather_TL.py took 0.368 seconds
+[2024-03-03T19:52:05.200+0000] {processor.py:161} INFO - Started process (PID=1248) to work on /opt/airflow/dags/weather_TL.py
+[2024-03-03T19:52:05.201+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/weather_TL.py for tasks to queue
+[2024-03-03T19:52:05.202+0000] {logging_mixin.py:188} INFO - [2024-03-03T19:52:05.202+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/weather_TL.py
+[2024-03-03T19:52:05.534+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/weather_TL.py
+[2024-03-03T19:52:05.544+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/weather_TL.py took 0.348 seconds
+[2024-03-03T19:52:35.924+0000] {processor.py:161} INFO - Started process (PID=1302) to work on /opt/airflow/dags/weather_TL.py
+[2024-03-03T19:52:35.925+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/weather_TL.py for tasks to queue
+[2024-03-03T19:52:35.928+0000] {logging_mixin.py:188} INFO - [2024-03-03T19:52:35.927+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/weather_TL.py
+[2024-03-03T19:52:36.298+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/weather_TL.py
+[2024-03-03T19:52:36.308+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/weather_TL.py took 0.388 seconds
+[2024-03-03T19:53:07.181+0000] {processor.py:161} INFO - Started process (PID=1362) to work on /opt/airflow/dags/weather_TL.py
+[2024-03-03T19:53:07.183+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/weather_TL.py for tasks to queue
+[2024-03-03T19:53:07.185+0000] {logging_mixin.py:188} INFO - [2024-03-03T19:53:07.185+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/weather_TL.py
+[2024-03-03T19:53:07.582+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/weather_TL.py
+[2024-03-03T19:53:07.593+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/weather_TL.py took 0.416 seconds
+[2024-03-03T19:53:37.651+0000] {processor.py:161} INFO - Started process (PID=1422) to work on /opt/airflow/dags/weather_TL.py
+[2024-03-03T19:53:37.652+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/weather_TL.py for tasks to queue
+[2024-03-03T19:53:37.654+0000] {logging_mixin.py:188} INFO - [2024-03-03T19:53:37.654+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/weather_TL.py
+[2024-03-03T19:53:38.036+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/weather_TL.py
+[2024-03-03T19:53:38.052+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/weather_TL.py took 0.407 seconds
+[2024-03-03T19:54:08.963+0000] {processor.py:161} INFO - Started process (PID=1482) to work on /opt/airflow/dags/weather_TL.py
+[2024-03-03T19:54:08.965+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/weather_TL.py for tasks to queue
+[2024-03-03T19:54:08.968+0000] {logging_mixin.py:188} INFO - [2024-03-03T19:54:08.967+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/weather_TL.py
+[2024-03-03T19:54:09.350+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/weather_TL.py
+[2024-03-03T19:54:09.360+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/weather_TL.py took 0.401 seconds
+[2024-03-03T19:54:39.762+0000] {processor.py:161} INFO - Started process (PID=1543) to work on /opt/airflow/dags/weather_TL.py
+[2024-03-03T19:54:39.763+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/weather_TL.py for tasks to queue
+[2024-03-03T19:54:39.766+0000] {logging_mixin.py:188} INFO - [2024-03-03T19:54:39.765+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/weather_TL.py
+[2024-03-03T19:54:40.154+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/weather_TL.py
+[2024-03-03T19:54:40.166+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/weather_TL.py took 0.407 seconds
+[2024-03-03T19:55:10.603+0000] {processor.py:161} INFO - Started process (PID=1603) to work on /opt/airflow/dags/weather_TL.py
+[2024-03-03T19:55:10.604+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/weather_TL.py for tasks to queue
+[2024-03-03T19:55:10.606+0000] {logging_mixin.py:188} INFO - [2024-03-03T19:55:10.606+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/weather_TL.py
+[2024-03-03T19:55:10.975+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/weather_TL.py
+[2024-03-03T19:55:10.997+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/weather_TL.py took 0.398 seconds
+[2024-03-03T19:55:41.968+0000] {processor.py:161} INFO - Started process (PID=1669) to work on /opt/airflow/dags/weather_TL.py
+[2024-03-03T19:55:41.969+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/weather_TL.py for tasks to queue
+[2024-03-03T19:55:41.972+0000] {logging_mixin.py:188} INFO - [2024-03-03T19:55:41.972+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/weather_TL.py
+[2024-03-03T19:55:42.394+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/weather_TL.py
+[2024-03-03T19:55:42.403+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/weather_TL.py took 0.443 seconds
+[2024-03-03T19:56:13.316+0000] {processor.py:161} INFO - Started process (PID=1730) to work on /opt/airflow/dags/weather_TL.py
+[2024-03-03T19:56:13.318+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/weather_TL.py for tasks to queue
+[2024-03-03T19:56:13.320+0000] {logging_mixin.py:188} INFO - [2024-03-03T19:56:13.320+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/weather_TL.py
+[2024-03-03T19:56:14.334+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/weather_TL.py
+[2024-03-03T19:56:14.354+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/weather_TL.py took 1.041 seconds
+[2024-03-03T19:56:44.643+0000] {processor.py:161} INFO - Started process (PID=1790) to work on /opt/airflow/dags/weather_TL.py
+[2024-03-03T19:56:44.644+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/weather_TL.py for tasks to queue
+[2024-03-03T19:56:44.647+0000] {logging_mixin.py:188} INFO - [2024-03-03T19:56:44.647+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/weather_TL.py
+[2024-03-03T19:56:45.234+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/weather_TL.py
+[2024-03-03T19:56:45.246+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/weather_TL.py took 0.606 seconds
+[2024-03-03T19:57:15.923+0000] {processor.py:161} INFO - Started process (PID=1850) to work on /opt/airflow/dags/weather_TL.py
+[2024-03-03T19:57:15.924+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/weather_TL.py for tasks to queue
+[2024-03-03T19:57:15.926+0000] {logging_mixin.py:188} INFO - [2024-03-03T19:57:15.926+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/weather_TL.py
+[2024-03-03T19:57:16.358+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/weather_TL.py
+[2024-03-03T19:57:16.372+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/weather_TL.py took 0.454 seconds
+[2024-03-03T19:57:46.874+0000] {processor.py:161} INFO - Started process (PID=1910) to work on /opt/airflow/dags/weather_TL.py
+[2024-03-03T19:57:46.875+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/weather_TL.py for tasks to queue
+[2024-03-03T19:57:46.879+0000] {logging_mixin.py:188} INFO - [2024-03-03T19:57:46.879+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/weather_TL.py
+[2024-03-03T19:57:47.271+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/weather_TL.py
+[2024-03-03T19:57:47.281+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/weather_TL.py took 0.412 seconds
+[2024-03-03T19:58:18.262+0000] {processor.py:161} INFO - Started process (PID=1970) to work on /opt/airflow/dags/weather_TL.py
+[2024-03-03T19:58:18.264+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/weather_TL.py for tasks to queue
+[2024-03-03T19:58:18.266+0000] {logging_mixin.py:188} INFO - [2024-03-03T19:58:18.265+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/weather_TL.py
+[2024-03-03T19:58:18.640+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/weather_TL.py
+[2024-03-03T19:58:18.651+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/weather_TL.py took 0.392 seconds
+[2024-03-03T19:58:48.787+0000] {processor.py:161} INFO - Started process (PID=2030) to work on /opt/airflow/dags/weather_TL.py
+[2024-03-03T19:58:48.789+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/weather_TL.py for tasks to queue
+[2024-03-03T19:58:48.792+0000] {logging_mixin.py:188} INFO - [2024-03-03T19:58:48.792+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/weather_TL.py
+[2024-03-03T19:58:49.157+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/weather_TL.py
+[2024-03-03T19:58:49.168+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/weather_TL.py took 0.386 seconds
+[2024-03-03T19:59:20.061+0000] {processor.py:161} INFO - Started process (PID=2090) to work on /opt/airflow/dags/weather_TL.py
+[2024-03-03T19:59:20.063+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/weather_TL.py for tasks to queue
+[2024-03-03T19:59:20.066+0000] {logging_mixin.py:188} INFO - [2024-03-03T19:59:20.065+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/weather_TL.py
+[2024-03-03T19:59:20.465+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/weather_TL.py
+[2024-03-03T19:59:20.475+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/weather_TL.py took 0.418 seconds
+[2024-03-03T19:59:51.256+0000] {processor.py:161} INFO - Started process (PID=2150) to work on /opt/airflow/dags/weather_TL.py
+[2024-03-03T19:59:51.257+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/weather_TL.py for tasks to queue
+[2024-03-03T19:59:51.260+0000] {logging_mixin.py:188} INFO - [2024-03-03T19:59:51.259+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/weather_TL.py
+[2024-03-03T19:59:51.633+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/weather_TL.py
+[2024-03-03T19:59:51.647+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/weather_TL.py took 0.396 seconds
+[2024-03-03T20:00:21.845+0000] {processor.py:161} INFO - Started process (PID=2210) to work on /opt/airflow/dags/weather_TL.py
+[2024-03-03T20:00:21.847+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/weather_TL.py for tasks to queue
+[2024-03-03T20:00:21.849+0000] {logging_mixin.py:188} INFO - [2024-03-03T20:00:21.849+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/weather_TL.py
+[2024-03-03T20:00:22.230+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/weather_TL.py
+[2024-03-03T20:00:22.240+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/weather_TL.py took 0.399 seconds
+[2024-03-03T20:00:52.574+0000] {processor.py:161} INFO - Started process (PID=2270) to work on /opt/airflow/dags/weather_TL.py
+[2024-03-03T20:00:52.575+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/weather_TL.py for tasks to queue
+[2024-03-03T20:00:52.578+0000] {logging_mixin.py:188} INFO - [2024-03-03T20:00:52.577+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/weather_TL.py
+[2024-03-03T20:00:52.954+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/weather_TL.py
+[2024-03-03T20:00:52.967+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/weather_TL.py took 0.397 seconds
+[2024-03-03T20:01:23.191+0000] {processor.py:161} INFO - Started process (PID=2330) to work on /opt/airflow/dags/weather_TL.py
+[2024-03-03T20:01:23.192+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/weather_TL.py for tasks to queue
+[2024-03-03T20:01:23.195+0000] {logging_mixin.py:188} INFO - [2024-03-03T20:01:23.194+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/weather_TL.py
+[2024-03-03T20:01:23.562+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/weather_TL.py
+[2024-03-03T20:01:23.573+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/weather_TL.py took 0.385 seconds
+[2024-03-03T20:01:54.356+0000] {processor.py:161} INFO - Started process (PID=2390) to work on /opt/airflow/dags/weather_TL.py
+[2024-03-03T20:01:54.358+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/weather_TL.py for tasks to queue
+[2024-03-03T20:01:54.360+0000] {logging_mixin.py:188} INFO - [2024-03-03T20:01:54.360+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/weather_TL.py
+[2024-03-03T20:01:54.754+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/weather_TL.py
+[2024-03-03T20:01:54.764+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/weather_TL.py took 0.411 seconds
+[2024-03-03T20:02:24.895+0000] {processor.py:161} INFO - Started process (PID=2450) to work on /opt/airflow/dags/weather_TL.py
+[2024-03-03T20:02:24.896+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/weather_TL.py for tasks to queue
+[2024-03-03T20:02:24.899+0000] {logging_mixin.py:188} INFO - [2024-03-03T20:02:24.898+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/weather_TL.py
+[2024-03-03T20:02:25.262+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/weather_TL.py
+[2024-03-03T20:02:25.273+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/weather_TL.py took 0.382 seconds
+[2024-03-03T20:02:56.172+0000] {processor.py:161} INFO - Started process (PID=2510) to work on /opt/airflow/dags/weather_TL.py
+[2024-03-03T20:02:56.173+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/weather_TL.py for tasks to queue
+[2024-03-03T20:02:56.176+0000] {logging_mixin.py:188} INFO - [2024-03-03T20:02:56.175+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/weather_TL.py
+[2024-03-03T20:02:56.556+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/weather_TL.py
+[2024-03-03T20:02:56.566+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/weather_TL.py took 0.397 seconds
+[2024-03-03T20:03:26.893+0000] {processor.py:161} INFO - Started process (PID=2570) to work on /opt/airflow/dags/weather_TL.py
+[2024-03-03T20:03:26.894+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/weather_TL.py for tasks to queue
+[2024-03-03T20:03:26.897+0000] {logging_mixin.py:188} INFO - [2024-03-03T20:03:26.897+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/weather_TL.py
+[2024-03-03T20:03:27.275+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/weather_TL.py
+[2024-03-03T20:03:27.287+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/weather_TL.py took 0.399 seconds
+[2024-03-03T20:03:58.002+0000] {processor.py:161} INFO - Started process (PID=2630) to work on /opt/airflow/dags/weather_TL.py
+[2024-03-03T20:03:58.004+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/weather_TL.py for tasks to queue
+[2024-03-03T20:03:58.007+0000] {logging_mixin.py:188} INFO - [2024-03-03T20:03:58.006+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/weather_TL.py
+[2024-03-03T20:03:58.375+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/weather_TL.py
+[2024-03-03T20:03:58.386+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/weather_TL.py took 0.389 seconds
+[2024-03-03T20:04:28.630+0000] {processor.py:161} INFO - Started process (PID=2690) to work on /opt/airflow/dags/weather_TL.py
+[2024-03-03T20:04:28.631+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/weather_TL.py for tasks to queue
+[2024-03-03T20:04:28.633+0000] {logging_mixin.py:188} INFO - [2024-03-03T20:04:28.633+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/weather_TL.py
+[2024-03-03T20:04:28.879+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/weather_TL.py
+[2024-03-03T20:04:28.892+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/weather_TL.py took 0.268 seconds
+[2024-03-03T20:04:59.272+0000] {processor.py:161} INFO - Started process (PID=2750) to work on /opt/airflow/dags/weather_TL.py
+[2024-03-03T20:04:59.273+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/weather_TL.py for tasks to queue
+[2024-03-03T20:04:59.276+0000] {logging_mixin.py:188} INFO - [2024-03-03T20:04:59.275+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/weather_TL.py
+[2024-03-03T20:04:59.536+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/weather_TL.py
+[2024-03-03T20:04:59.549+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/weather_TL.py took 0.280 seconds
+[2024-03-03T20:05:30.451+0000] {processor.py:161} INFO - Started process (PID=2810) to work on /opt/airflow/dags/weather_TL.py
+[2024-03-03T20:05:30.452+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/weather_TL.py for tasks to queue
+[2024-03-03T20:05:30.454+0000] {logging_mixin.py:188} INFO - [2024-03-03T20:05:30.454+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/weather_TL.py
+[2024-03-03T20:05:30.717+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/weather_TL.py
+[2024-03-03T20:05:30.732+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/weather_TL.py took 0.285 seconds
+[2024-03-03T20:06:00.837+0000] {processor.py:161} INFO - Started process (PID=2870) to work on /opt/airflow/dags/weather_TL.py
+[2024-03-03T20:06:00.838+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/weather_TL.py for tasks to queue
+[2024-03-03T20:06:00.841+0000] {logging_mixin.py:188} INFO - [2024-03-03T20:06:00.841+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/weather_TL.py
+[2024-03-03T20:06:01.087+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/weather_TL.py
+[2024-03-03T20:06:01.099+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/weather_TL.py took 0.267 seconds
+[2024-03-03T20:06:32.082+0000] {processor.py:161} INFO - Started process (PID=2930) to work on /opt/airflow/dags/weather_TL.py
+[2024-03-03T20:06:32.084+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/weather_TL.py for tasks to queue
+[2024-03-03T20:06:32.086+0000] {logging_mixin.py:188} INFO - [2024-03-03T20:06:32.086+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/weather_TL.py
+[2024-03-03T20:06:32.338+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/weather_TL.py
+[2024-03-03T20:06:32.351+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/weather_TL.py took 0.272 seconds
+[2024-03-03T20:07:02.387+0000] {processor.py:161} INFO - Started process (PID=2989) to work on /opt/airflow/dags/weather_TL.py
+[2024-03-03T20:07:02.388+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/weather_TL.py for tasks to queue
+[2024-03-03T20:07:02.391+0000] {logging_mixin.py:188} INFO - [2024-03-03T20:07:02.390+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/weather_TL.py
+[2024-03-03T20:07:02.650+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/weather_TL.py
+[2024-03-03T20:07:02.663+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/weather_TL.py took 0.280 seconds
+[2024-03-03T20:07:32.704+0000] {processor.py:161} INFO - Started process (PID=3049) to work on /opt/airflow/dags/weather_TL.py
+[2024-03-03T20:07:32.705+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/weather_TL.py for tasks to queue
+[2024-03-03T20:07:32.707+0000] {logging_mixin.py:188} INFO - [2024-03-03T20:07:32.706+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/weather_TL.py
+[2024-03-03T20:07:32.940+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/weather_TL.py
+[2024-03-03T20:07:32.951+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/weather_TL.py took 0.251 seconds
+[2024-03-03T20:08:03.001+0000] {processor.py:161} INFO - Started process (PID=3109) to work on /opt/airflow/dags/weather_TL.py
+[2024-03-03T20:08:03.002+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/weather_TL.py for tasks to queue
+[2024-03-03T20:08:03.004+0000] {logging_mixin.py:188} INFO - [2024-03-03T20:08:03.004+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/weather_TL.py
+[2024-03-03T20:08:03.253+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/weather_TL.py
+[2024-03-03T20:08:03.267+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/weather_TL.py took 0.270 seconds
+[2024-03-03T20:08:33.489+0000] {processor.py:161} INFO - Started process (PID=3169) to work on /opt/airflow/dags/weather_TL.py
+[2024-03-03T20:08:33.491+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/weather_TL.py for tasks to queue
+[2024-03-03T20:08:33.494+0000] {logging_mixin.py:188} INFO - [2024-03-03T20:08:33.493+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/weather_TL.py
+[2024-03-03T20:08:33.752+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/weather_TL.py
+[2024-03-03T20:08:33.764+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/weather_TL.py took 0.279 seconds
+[2024-03-03T20:09:03.956+0000] {processor.py:161} INFO - Started process (PID=3229) to work on /opt/airflow/dags/weather_TL.py
+[2024-03-03T20:09:03.958+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/weather_TL.py for tasks to queue
+[2024-03-03T20:09:03.961+0000] {logging_mixin.py:188} INFO - [2024-03-03T20:09:03.960+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/weather_TL.py
+[2024-03-03T20:09:04.219+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/weather_TL.py
+[2024-03-03T20:09:04.230+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/weather_TL.py took 0.279 seconds
+[2024-03-03T20:09:34.361+0000] {processor.py:161} INFO - Started process (PID=3290) to work on /opt/airflow/dags/weather_TL.py
+[2024-03-03T20:09:34.362+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/weather_TL.py for tasks to queue
+[2024-03-03T20:09:34.364+0000] {logging_mixin.py:188} INFO - [2024-03-03T20:09:34.364+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/weather_TL.py
+[2024-03-03T20:09:34.611+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/weather_TL.py
+[2024-03-03T20:09:34.625+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/weather_TL.py took 0.268 seconds
+[2024-03-03T20:10:04.710+0000] {processor.py:161} INFO - Started process (PID=3349) to work on /opt/airflow/dags/weather_TL.py
+[2024-03-03T20:10:04.712+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/weather_TL.py for tasks to queue
+[2024-03-03T20:10:04.715+0000] {logging_mixin.py:188} INFO - [2024-03-03T20:10:04.714+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/weather_TL.py
+[2024-03-03T20:10:04.975+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/weather_TL.py
+[2024-03-03T20:10:04.987+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/weather_TL.py took 0.280 seconds
+[2024-03-03T20:10:35.351+0000] {processor.py:161} INFO - Started process (PID=3410) to work on /opt/airflow/dags/weather_TL.py
+[2024-03-03T20:10:35.352+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/weather_TL.py for tasks to queue
+[2024-03-03T20:10:35.354+0000] {logging_mixin.py:188} INFO - [2024-03-03T20:10:35.354+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/weather_TL.py
+[2024-03-03T20:10:35.613+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/weather_TL.py
+[2024-03-03T20:10:35.624+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/weather_TL.py took 0.277 seconds
+[2024-03-03T20:11:05.706+0000] {processor.py:161} INFO - Started process (PID=3469) to work on /opt/airflow/dags/weather_TL.py
+[2024-03-03T20:11:05.707+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/weather_TL.py for tasks to queue
+[2024-03-03T20:11:05.710+0000] {logging_mixin.py:188} INFO - [2024-03-03T20:11:05.709+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/weather_TL.py
+[2024-03-03T20:11:05.970+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/weather_TL.py
+[2024-03-03T20:11:05.982+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/weather_TL.py took 0.281 seconds
+[2024-03-03T20:11:36.898+0000] {processor.py:161} INFO - Started process (PID=3530) to work on /opt/airflow/dags/weather_TL.py
+[2024-03-03T20:11:36.900+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/weather_TL.py for tasks to queue
+[2024-03-03T20:11:36.902+0000] {logging_mixin.py:188} INFO - [2024-03-03T20:11:36.902+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/weather_TL.py
+[2024-03-03T20:11:37.163+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/weather_TL.py
+[2024-03-03T20:11:37.177+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/weather_TL.py took 0.284 seconds
+[2024-03-03T20:12:07.354+0000] {processor.py:161} INFO - Started process (PID=3590) to work on /opt/airflow/dags/weather_TL.py
+[2024-03-03T20:12:07.355+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/weather_TL.py for tasks to queue
+[2024-03-03T20:12:07.357+0000] {logging_mixin.py:188} INFO - [2024-03-03T20:12:07.357+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/weather_TL.py
+[2024-03-03T20:12:07.616+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/weather_TL.py
+[2024-03-03T20:12:07.628+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/weather_TL.py took 0.278 seconds
+[2024-03-03T20:12:38.582+0000] {processor.py:161} INFO - Started process (PID=3650) to work on /opt/airflow/dags/weather_TL.py
+[2024-03-03T20:12:38.583+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/weather_TL.py for tasks to queue
+[2024-03-03T20:12:38.586+0000] {logging_mixin.py:188} INFO - [2024-03-03T20:12:38.586+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/weather_TL.py
+[2024-03-03T20:12:38.852+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/weather_TL.py
+[2024-03-03T20:12:38.864+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/weather_TL.py took 0.287 seconds
+[2024-03-03T20:13:09.079+0000] {processor.py:161} INFO - Started process (PID=3710) to work on /opt/airflow/dags/weather_TL.py
+[2024-03-03T20:13:09.080+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/weather_TL.py for tasks to queue
+[2024-03-03T20:13:09.082+0000] {logging_mixin.py:188} INFO - [2024-03-03T20:13:09.082+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/weather_TL.py
+[2024-03-03T20:13:09.325+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/weather_TL.py
+[2024-03-03T20:13:09.337+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/weather_TL.py took 0.262 seconds
+[2024-03-03T20:13:39.466+0000] {processor.py:161} INFO - Started process (PID=3770) to work on /opt/airflow/dags/weather_TL.py
+[2024-03-03T20:13:39.468+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/weather_TL.py for tasks to queue
+[2024-03-03T20:13:39.470+0000] {logging_mixin.py:188} INFO - [2024-03-03T20:13:39.470+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/weather_TL.py
+[2024-03-03T20:13:39.737+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/weather_TL.py
+[2024-03-03T20:13:39.750+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/weather_TL.py took 0.287 seconds
+[2024-03-03T20:14:09.814+0000] {processor.py:161} INFO - Started process (PID=3829) to work on /opt/airflow/dags/weather_TL.py
+[2024-03-03T20:14:09.815+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/weather_TL.py for tasks to queue
+[2024-03-03T20:14:09.817+0000] {logging_mixin.py:188} INFO - [2024-03-03T20:14:09.816+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/weather_TL.py
+[2024-03-03T20:14:10.052+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/weather_TL.py
+[2024-03-03T20:14:10.064+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/weather_TL.py took 0.253 seconds
